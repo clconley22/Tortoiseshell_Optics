@@ -1,0 +1,260 @@
+html {
+  font-size: 18px;
+  font-family: "Helvetica", sans-serif;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin:0 auto;
+}
+
+/*header*/
+
+nav {
+  display: flex;
+  background-color: cadetblue;
+  color: white;
+  align-items: center;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: block;
+  margin-left: 15rem;
+}
+
+nav li {
+  display: inline;
+  padding-right: 2rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+header {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.slogan-text {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  font-size: 2rem;
+}
+
+.slogan {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*servives section*/
+.services {
+  display: flex;
+  justify-content: center;
+}
+.service,
+.service-paper {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 0 3rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 5rem;
+}
+
+.service img {
+  display: flex;
+  width: 5rem;
+}
+
+.service-paper img {
+  width: 3.5rem;
+}
+
+ /*philosophy and appointment section*/
+ .company-info span{
+   display: flex;
+   font-size: 1rem;
+   font-weight: bold;
+   background-color: cadetblue;
+   color: white;
+   padding-top: .5rem;
+   padding-bottom: .5rem;
+   padding-left: 1.25rem;
+   width: 10rem;
+ }
+
+ .company-info p {
+   padding-top: 1rem;
+ }
+
+  .company-info .philosophy,
+  .company-info .appointments {
+    width: 35%;
+    display: inline-block;
+    margin-bottom: 5rem;
+  }
+
+ .company-info {
+    display: flex;
+    justify-content: center;
+}
+
+.company-info .philosophy {
+    margin-right: 5%;
+}
+ /*footer section*/
+
+footer {
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+/*tablet*/
+
+@media only screen and (max-width: 1024px){
+  .container {
+    max-width: 100%;
+  }
+
+   header {
+     padding-top: 0;
+     height: 22rem;
+   }
+
+  nav {
+     width: 100%;
+     }
+
+  body {
+    width: 100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+  }
+
+  .slogan-text {
+    padding: .75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+  }
+
+}
+@media only screen and (max-width: 883px) {
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    padding-top: 0;
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .slogan-text {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    margin-top: 6rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+    font-size: .77rem;
+  }
+
+  .service {
+    padding-top: 0px;
+    padding-bottom: 1.54rem;
+    height: 6rem;
+  }
+
+  .service-paper{
+    height: 7.5rem;
+    padding-top: 0px;
+    padding-bottom: 1.54rem;
+  }
+
+  .service-paper img {
+    padding-bottom: .5rem;
+  }
+
+  .company-info .philosophy,
+  .company-info .appointments {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .company-info {
+     flex-wrap: wrap
+   }
+
+   .company-info span {
+     width: 100%;
+   }
+
+   .company-info p {
+     margin-left: .5rem;
+     font-size: .77rem;
+   }
+
+   .company-info .philosophy {
+     margin-right: 0px;
+     margin-top: 2.23rem;
+   }
+}
